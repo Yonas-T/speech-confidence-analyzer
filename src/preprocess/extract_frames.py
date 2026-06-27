@@ -5,7 +5,7 @@ def extract_frames(video_path, output_folder, title, interval=30):
     cap = cv2.VideoCapture(video_path)
     cap.set(cv2.CAP_PROP_POS_FRAMES, 100)
 
-    count = 0
+    count = 0 # frame counts
     while True:
         ret, frame = cap.read()
         if not ret:
